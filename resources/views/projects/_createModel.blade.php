@@ -7,7 +7,7 @@
 <div class="modal fade" id="createProject" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-            {!!Form::open(['route'=>'projects.store', 'method'=>'post']) !!}
+            {!!Form::open(['route'=>'projects.store', 'method'=>'post', 'files'=>'true']) !!}
                 <div class="modal-header">
                     <h5 class="modal-title" id="createProjectLabel">new project</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">

@@ -38,6 +38,7 @@ class User extends Authenticatable
     ];
 
     public function projects(){
-        return $this->hasMany('app/Project');
+//    App这个要大写，斜杠\这个也要正确！
+        return $this->hasMany('App\Project');
     }
 }
