@@ -24,8 +24,11 @@
                         {!! Form::label('thumbnail','Project Pic:') !!}
                         {!! Form::file('thumbnail',['class'=>'form-control-file']) !!}
                     </div>
+                    @include('errors._errors')
                 </div>
                 <div class="modal-footer">
+{{--                    这个errors是系统本身的一个全局变量--}}
+
                     {!! Form::submit('Submit', ['class' => 'btn btn-primary']) !!}
                 </div>
             {!!Form::close() !!}
