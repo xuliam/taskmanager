@@ -28,7 +28,10 @@ class HomeController extends Controller
 
     public function root()
     {
-        return view('welcome');
+//        request()->user()获取了当前用户，然后调用当前用户的关系方法projects(),在用get方法获得项目，最后把它保存在变量projects
+        $projects = request()->user()->projects()->get();
+//       调用view里面是用了一个php方法compact（），意思是包含变量projects，注意，这里不用$。
+         return view('welcome',compact('projects'));
     }
 
 

@@ -20,6 +20,7 @@ class ProjectsController extends Controller
     public function store(CreateProjectRequest $request){
 //        相当于实例化的ProjectsRepository，然后掉他的create方法；
         $this->repo->create($request);
+        return back();
 
     }
 
