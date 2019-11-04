@@ -24,6 +24,12 @@ class ProjectsController extends Controller
 
     }
 
+    public function destroy($id)
+    {
+        $this->repo->delete($id);
+            return back();
+    }
+
 
 
 }

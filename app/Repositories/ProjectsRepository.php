@@ -3,6 +3,7 @@
 
 namespace App\Repositories;
 use Image;
+use App\Project;
 
 
 class ProjectsRepository
@@ -21,6 +22,17 @@ class ProjectsRepository
         );
     }
 
+    public function find($id)
+    {
+        return Project::findOrFail($id);
+    }
+
+    public function delete($id)
+    {
+        $project = $this->find($id);
+        $project->delete();
+    }
+
     public function thumb($request){
 // 用request->thumbnail获取到图片对象,然好用store方法存储；括号里面是文件夹的名称；最后把这一串方法的返回值存到$path里
 //       $path= $request->thumbnail->store('public\thumbs');
@@ -29,10 +41,10 @@ class ProjectsRepository
             $thumb = $request->thumbnail;
             $name = $thumb->hashName();//把名字秘名
             $thumb->storeAs('public\thumbs\original', $name);
-
-            //调用image的make方法来读取thumb信息,用resize方法改变图片大小
-            $path = storage_path('app/public/thumbs/cropped/'.$name);
-            Image::make($thumb)->resize(200,100)->save($path);
+//保存图片的第二种方法；
+//            //调用image的make方法来读取thumb信息,用resize方法改变图片大小
+//            $path = storage_path('app/public/thumbs/cropped/'.$name);
+//            Image::make($thumb)->resize(200,100)->save($path);
             return $name;
         }
 
