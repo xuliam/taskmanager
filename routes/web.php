@@ -11,13 +11,24 @@
 |
 */
 
-Route::get('/', 'HomeController@root');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', 'ProjectsController@index');
+/*
+//增
 //给路由命名 的两种方法；
-Route::post('/projects',  'ProjectsController@store')->name('projects.store');
+Route::post('projects',  'ProjectsController@store')->name('projects.store');
 //Route::post('/projects',  ['uses'=>'ProjectsController@store', 'as'=>'projects.store']);
+//删
+Route::delete('projects/{project}', ['uses'=>'ProjectsController@destroy', 'as'=>'projects.destroy']);
+//改
+Route::patch('projects/{project}', ['uses'=>'ProjectsController@update', 'as'=>'projects.update']);
+//查
+Route::get('/', 'ProjectsController@index');
+Route::get('projects/{project}', ['uses'=>'ProjectsController@show', 'as'=>'projects.show']);
+*/
 
-Route::delete('users/{project}', ['uses'=>'ProjectsController@destroy', 'as'=>'projects.destroy']);
+Route::resource('projects','ProjectsController');
+Route::resource('tasks','TasksController');

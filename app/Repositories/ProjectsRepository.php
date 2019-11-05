@@ -8,6 +8,13 @@ use App\Project;
 
 class ProjectsRepository
 {
+    public function list()
+    {
+//        request()->user()获取了当前用户，然后调用当前用户的关系方法projects(),在用get方法获得项目，最后把它保存在变量projects
+        return request()->user()->projects()->get();
+    }
+
+
     public function create($request)
     {
 //        $request->thumbnail
@@ -25,6 +32,17 @@ class ProjectsRepository
     public function find($id)
     {
         return Project::findOrFail($id);
+    }
+
+    public function update($request, $id)
+    {
+        $project = $this->find($id);
+        $project->name = $request->name;
+        if($request->hasFile('thumbnail')){
+            $project->thumbnail = $this->thumb($request);
+        }
+
+        $project->save();
     }
 
     public function delete($id)

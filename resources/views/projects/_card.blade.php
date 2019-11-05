@@ -3,14 +3,15 @@
 
         <ul class="icon-bar">
             <li>
-                {!! Form::open(['route'=>['projects.destroy', $project->id], 'method'=>'DELETE']) !!}
-                    <button type="submit" class="btn btn-default">
-                        <i class="fa fa-btn fa-times"></i>
-                    </button>
-                {!! Form::close() !!}
+                @include('projects._deleteForm')
             </li>
             <li>
-                        <i class="fa fa-btn fa-cog"></i>
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#editProjectModal-{{$project->id}}">
+                    <i class="fa fa-btn fa-cog"></i>
+                </button>
+
             </li>
         </ul>
             <a href= 'projects/{{$project->id}}'>
@@ -25,4 +26,7 @@
             </a>
         </div>
     </div>
+
+  @include('projects._editModal')
+
 </div>

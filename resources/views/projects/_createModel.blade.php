@@ -1,5 +1,5 @@
 
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#createProject">
+<button type="button" class="btn modal-trigger" data-toggle="modal" data-target="#createProject">
     <i class="fas fa-plus"></i>
 </button>
 

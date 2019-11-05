@@ -6,6 +6,11 @@
         <div class="card-deck">
 {{--        方法3 @each方法：第一个元素为循环的视图，第二元素为集合是那个，第三个元素为单个元素变量名字，第四个如果不纯在严格元素时，调用那个视图（可选）--}}
              @each('projects._card',$projects,'project')
+            <div class="card col-3 my-3">
+                <div class="card-body d-flex align-items-center justify-content-center ">
+                    @include('projects._createModel')
+                </div>
+            </div>
         </div>
 {{--        方法 1--}}
 {{--        @if(count($projects))--}}
@@ -30,7 +35,6 @@
 {{--        @endif--}}
 
 
-        @include('projects._createModel')
     </div>
 
 @endsection

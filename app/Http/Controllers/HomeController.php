@@ -11,10 +11,7 @@ class HomeController extends Controller
      *
      * @return void
      */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
+
 
     /**
      * Show the application dashboard.
@@ -26,16 +23,7 @@ class HomeController extends Controller
         return view('home');
     }
 
-    public function root()
-    {
-//        request()->user()获取了当前用户，然后调用当前用户的关系方法projects(),在用get方法获得项目，最后把它保存在变量projects
-        $projects = request()->user()->projects()->get();
-//        $projects为一个集合的数据类型collection，我们可以用collect方法来给projects变量做一个判断
-//        return collect()->isEmpty() ? 'true' : 'false';
-        //dd($projects);
-//       调用view里面是用了一个php方法compact（），意思是包含变量projects，注意，这里不用$。
-         return view('welcome',compact('projects'));
-    }
+
 
 
 }
