@@ -32,3 +32,4 @@ Route::get('projects/{project}', ['uses'=>'ProjectsController@show', 'as'=>'proj
 
 Route::resource('projects','ProjectsController');
 Route::resource('tasks','TasksController');
+Route::post('tasks/{id}/check', 'TasksController@check')->name('tasks.check');

@@ -2,6 +2,8 @@
 
 @section('content')
   <div class="container">
-      show show show
+      @include('tasks._createForm')
+      @include('tasks._list')
+
   </div>
 @endsection

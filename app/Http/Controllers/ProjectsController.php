@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\CreateProjectRequest;
 use App\Http\Requests\UpdateProjectRequest;
 use App\Repositories\ProjectsRepository;
-
+use App\Project;
 
 class ProjectsController extends Controller
 {
@@ -64,11 +64,17 @@ class ProjectsController extends Controller
     }
 
 
-
-    public function show($id)
+//第一个Project是路由 上面要写上use App\Project， 第二个$project是数据模型。（传进来了个路由参数，laravel自动根据路由信息找到这个$project的id
+    public function show(Project $project)
     {
-        $project = $this->repo->find($id);
-        return view('projects.show');
+////     方法1   找到project 通过他和tasks之间的关系，找到所有的任务，执行where方法看谁没有完成，get到他们
+//        $todos =$project->tasks()->where('completion', 0)->get();
+//        方法2
+        $todos = $this->repo->todos($project);
+        $dones = $this->repo->dones($project);
+        //        $project = $this->repo->find($id);
+
+        return view('projects.show',compact('project','todos','dones'));
     }
 
 
