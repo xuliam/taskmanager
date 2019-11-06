@@ -6,16 +6,20 @@
 </nav>
 <div class="tab-content" id="nav-tabContent">
     <div class="tab-pane fade show active" id="todo" role="tabpanel" aria-labelledby="todo-tab">
-        @if (count($todos))
             <table class="table table-striped">
-                @foreach($todos as $task1)
-                    <tr>
-                        <td>{{$task1->name}}</td>
-                        <td>@include('tasks._checkForm')</td>
-                    </tr>
-                @endforeach
+                <tr>
+                    @include('tasks._createForm')
+                </tr>
+                @if (count($todos))
+                    @foreach($todos as $task1)
+                        <tr>
+                            <td class="col-10 pl-3">{{$task1->name}}</td>
+                            <td>@include('tasks._checkForm')</td>
+                            <td>@include('tasks._deleteForm')</td>
+                        </tr>
+                    @endforeach
+                @endif
             </table>
-        @endif
     </div>
     <div class="tab-pane fade" id="done" role="tabpanel" aria-labelledby="done-tab">
         @if (count($dones))

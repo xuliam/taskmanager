@@ -29,5 +29,10 @@ class TasksRepository
          ]);
    }
 
+    public function destroy($id)
+    {
+        $this->find($id)->delete();
+   }
+
 
 }
