@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9d9ebcf7-67a0-42af-ab9f-7481a53ca1b6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/tasks/_deleteForm.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TasksController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TasksController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/TasksRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/TasksRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/projects/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/projects/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/tasks/_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/tasks/_list.blade.php" afterDir="false" />
-    </list>
+    <list default="true" id="9d9ebcf7-67a0-42af-ab9f-7481a53ca1b6" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +185,7 @@
       <workItem from="1572558370690" duration="46955000" />
       <workItem from="1572949430359" duration="117000" />
       <workItem from="1572949677921" duration="70000" />
-      <workItem from="1572983474223" duration="5109000" />
+      <workItem from="1572983474223" duration="5284000" />
     </task>
     <task id="LOCAL-00001" summary="laravel">
       <created>1572305351652</created>
