@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9d9ebcf7-67a0-42af-ab9f-7481a53ca1b6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/public/.htaccess" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -188,7 +187,7 @@
       <workItem from="1572558370690" duration="46955000" />
       <workItem from="1572949430359" duration="117000" />
       <workItem from="1572949677921" duration="70000" />
-      <workItem from="1572983474223" duration="7578000" />
+      <workItem from="1572983474223" duration="8111000" />
     </task>
     <task id="LOCAL-00001" summary="laravel">
       <created>1572305351652</created>
