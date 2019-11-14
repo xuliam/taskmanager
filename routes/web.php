@@ -30,6 +30,8 @@ Route::get('/', 'ProjectsController@index');
 Route::get('projects/{project}', ['uses'=>'ProjectsController@show', 'as'=>'projects.show']);
 */
 
+
+// resource 路由， 第一个参数是数据模型的复数，第二个是Controller名字
 Route::resource('projects','ProjectsController');
 Route::resource('tasks','TasksController');
 Route::post('tasks/{id}/check', 'TasksController@check')->name('tasks.check');

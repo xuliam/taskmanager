@@ -28,7 +28,7 @@ class ProjectsController extends Controller
 //    调用CreateProjectRequest类，实例化变成$request(实例化的名字随便取）
     public function store(CreateProjectRequest $request){
 //        相当于实例化的ProjectsRepository，然后调他的create方法；
-        $this->repo->create($request);
+         $this->repo->create($request);
         return back();
 
     }
@@ -64,7 +64,7 @@ class ProjectsController extends Controller
     }
 
 
-//第一个Project是路由 上面要写上use App\Project， 第二个$project是数据模型。（传进来了个路由参数，laravel自动根据路由信息找到这个$project的id
+//第一个Project是数据模型 上面要写上use App\Project， 第二个$project是路由参数。（传进来了个路由参数，laravel自动根据路由信息找到这个$project的id
     public function show(Project $project)
     {
 ////     方法1   找到project 通过他和tasks之间的关系，找到所有的任务，执行where方法看谁没有完成，get到他们

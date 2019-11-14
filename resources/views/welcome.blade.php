@@ -4,7 +4,7 @@
 @section('content')
     <div class="container">
         <div class="card-deck">
-{{--        方法3 @each方法：第一个元素为循环的视图，第二元素为集合是那个，第三个元素为单个元素变量名字，第四个如果不纯在严格元素时，调用那个视图（可选）--}}
+{{--        方法3 @each方法：第一个元素为循环的视图，第二元素为集合是那个，第三个元素为单个元素变量名字（你给他取的名字，赋值给他，然后他取填充视图），第四个如果不纯在严格元素时，调用那个视图（可选）--}}
              @each('projects._card',$projects,'project')
             <div class="card col-3 my-3">
                 <div class="card-body d-flex align-items-center justify-content-center ">

@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="9d9ebcf7-67a0-42af-ab9f-7481a53ca1b6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProjectsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProjectsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/projects/_createModel.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/projects/_createModel.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,7 +17,7 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
-      <executable />
+      <executable path="composer" />
     </execution>
   </component>
   <component name="FindInProjectRecents">
@@ -139,7 +143,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -187,7 +191,14 @@
       <workItem from="1572558370690" duration="46955000" />
       <workItem from="1572949430359" duration="117000" />
       <workItem from="1572949677921" duration="70000" />
-      <workItem from="1572983474223" duration="8111000" />
+      <workItem from="1572983474223" duration="8358000" />
+      <workItem from="1573075353820" duration="986000" />
+      <workItem from="1573076884936" duration="2411000" />
+      <workItem from="1573467484322" duration="26000" />
+      <workItem from="1573467512455" duration="1000" />
+      <workItem from="1573509157132" duration="832000" />
+      <workItem from="1573510890788" duration="10805000" />
+      <workItem from="1573594960844" duration="7951000" />
     </task>
     <task id="LOCAL-00001" summary="laravel">
       <created>1572305351652</created>

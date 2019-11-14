@@ -18,6 +18,7 @@
                     <div class="form-group">
                         {!! Form::label('name','Project Name:') !!}
                         {!! Form::text('name','',['class'=>'form-control']) !!}
+{{--                        text类型的input， 第一个是name，第二个是value，第三个是传进去的参数--}}
                     </div>
 
                     <div class="form-group">
@@ -32,6 +33,8 @@
                     {!! Form::submit('Submit', ['class' => 'btn btn-primary']) !!}
                 </div>
             {!!Form::close() !!}
+
+
         </div>
     </div>
 </div>
